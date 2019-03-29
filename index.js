@@ -26,7 +26,7 @@ function viewCart() {
     if (i === (cart.length - 1)){
       sentence = sentence + '.'
     }else {
-      sentence = sentence + ','
+      sentence = sentence + ', '
     }
   }
 }
