@@ -65,6 +65,11 @@ function removeFromCart(item) {
     if (cart[i].itemName === item){
       removed = cart.splice(i, 1)
     }
+    if (removed = ''){
+      return 'That item is not in your cart.'
+    } else {
+      return cart
+    }
   }
 }
 
