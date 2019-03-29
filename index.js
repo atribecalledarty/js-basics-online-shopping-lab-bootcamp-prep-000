@@ -22,7 +22,7 @@ function viewCart() {
   // write your code here
   if (cart.length === 0){
     return "Your shopping cart is empty."
-  } else if {
+  } else {
     var sentence = "In your cart, you have "
     for (var i = 0; i < cart.length; i++){
       sentence = sentence + cart[i].itemName + ' at $' + cart[i].itemPrice
