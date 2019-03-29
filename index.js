@@ -23,28 +23,28 @@ function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty."
   } else if {
-  var sentence = "In your cart, you have "
-  for (var i = 0; i < cart.length; i++){
-    sentence = sentence + cart[i].itemName + ' at $' + cart[i].itemPrice
-    if (cart.length === 1){
-      sentence = sentence + '.'
-    }else if (cart.length === 2){
-      if (i === 0){
-        sentence = sentence + ', and'
-      } else {
+    var sentence = "In your cart, you have "
+    for (var i = 0; i < cart.length; i++){
+      sentence = sentence + cart[i].itemName + ' at $' + cart[i].itemPrice
+      if (cart.length === 1){
         sentence = sentence + '.'
-      }
-      
-    }else if (cart.length >= 3){
-      if (i < (cart.length - 2)){
-        sentence = sentence + ', '
-      } else if (i === (cart.length - 2)){
-        sentence = sentence + ', and '
-      } else {
-        sentence = sentence + '.'
+      }else if (cart.length === 2){
+        if (i === 0){
+          sentence = sentence + ', and'
+        } else {
+          sentence = sentence + '.'
+        }
+        
+      }else if (cart.length >= 3){
+        if (i < (cart.length - 2)){
+          sentence = sentence + ', '
+        } else if (i === (cart.length - 2)){
+          sentence = sentence + ', and '
+        } else {
+          sentence = sentence + '.'
+        }
       }
     }
-  }
   }
   return sentence
 }
