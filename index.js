@@ -30,7 +30,7 @@ function viewCart() {
         sentence = sentence + '.'
       }else if (cart.length === 2){
         if (i === 0){
-          sentence = sentence + ', and'
+          sentence = sentence + ', and '
         } else {
           sentence = sentence + '.'
         }
