@@ -20,6 +20,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  if (cart.length === 0){
+    return "Your shopping cart is empty."
+  } else if {
   var sentence = "In your cart, you have "
   for (var i = 0; i < cart.length; i++){
     sentence = sentence + cart[i].itemName + ' at $' + cart[i].itemPrice
@@ -41,6 +44,7 @@ function viewCart() {
         sentence = sentence + '.'
       }
     }
+  }
   }
   return sentence
 }
