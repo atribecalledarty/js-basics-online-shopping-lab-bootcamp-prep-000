@@ -20,7 +20,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  
+  var sentence = "In your cart, you have "
+  for (var i = 0; i < cart.length; i++){
+    sentence = sentence + 
+  }
 }
 
 function total() {
