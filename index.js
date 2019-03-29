@@ -42,6 +42,7 @@ function viewCart() {
       }
     }
   }
+  return sentence
 }
 
 function total() {
