@@ -23,10 +23,13 @@ function viewCart() {
   var sentence = "In your cart, you have "
   for (var i = 0; i < cart.length; i++){
     sentence = sentence + cart[i].itemName + ' at $' + cart[i].itemPrice
-    if (i === (cart.length - 1)){
+    if (cart.length === 1){
       sentence = sentence + '.'
-    }else {
-      sentence = sentence + ', '
+    }else if (cart.length === 2){
+      if (i === 0){
+        sentence = 
+      }
+      sentence = 
     }
   }
 }
