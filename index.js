@@ -33,7 +33,13 @@ function viewCart() {
       }
       
     }else if (cart.length >= 3){
-      
+      if (i < (cart.length - 2)){
+        sentence = sentence + ', '
+      } else if (i === (cart.length - 2)){
+        sentence = sentence + ', and '
+      } else {
+        sentence = sentence + '.'
+      }
     }
   }
 }
