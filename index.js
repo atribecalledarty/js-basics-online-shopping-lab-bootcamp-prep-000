@@ -12,7 +12,8 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var newItem = {itemName: '${item}'}
- var newItem.itemPrice = Math.random() * (100 - 1) + 1
+ var newItem.itemPrice = (Math.random() * (100 - 1) + 1)
+ 
  
 }
 
